@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "notes",
+		"_postman_id": "fcc888f4-e2fe-29dd-97ac-521fe8e75866",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Delete a Note by Id",
+			"request": {
+				"url": "http://localhost:8080/api/notes/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "delete"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Note",
+			"request": {
+				"url": "http://localhost:8080/api/notes/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"MyFirst API\",\n\t\"content\":\"Hello World this my first Note\"\n}"
+				},
+				"description": "update"
+			},
+			"response": []
+		},
+		{
+			"name": "View Notes by ID",
+			"request": {
+				"url": "http://localhost:8080/api/notes/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "search by id"
+			},
+			"response": []
+		},
+		{
+			"name": "View All Notes",
+			"request": {
+				"url": "http://localhost:8080/api/notes",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "search all"
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Note",
+			"request": {
+				"url": "http://localhost:8080/api/notes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"title\":\"My Second ID\",\n\t\"content\":\"Hello World this my first Note\"\n}"
+				},
+				"description": "save"
+			},
+			"response": []
+		}
+	]
+}
